@@ -21,13 +21,31 @@ checks for being divisible by both, itll print Fizzbuzz. It will
 then skip the other conditions to check for due to the condition
 having been met. */
 
+/*ALSO CANNOT JUST PRINT THE NUMBER AFTER EVERY ITERATION
+---> Need to set an if condition to check that the number
+is not divisible by 3 or 5 so it can just print the number
+value------> Probably the else statement */
+
 function fizzbuzz() {
 	for ( var i = 1; i < 101; i++) {
 		//Prioritize if conditions to check for divisible by 3 AND 5
-		
+		if ( i % 3 === 0 && i % 5 === 0) {
+			console.log("fizz buzz");
 	}
-	
-}	
+		//Check if divisible by 3
+		else if (i % 3 === 0) {
+			console.log('fizz');	
+		}
+		//Check if divisble by 5
+		else if (i % 5 === 0) {
+			console.log('buzz');
+		}
+		//Finally, since the number is not div by 3 or 5, just print number
+		else {
+			console.log(i);	
+		}
+	}
+}
 /* you count from 1 to a given number (let’s say 100). For each
 number if it’s not divisible by 3 or 5, you simply say the number.
 If it’s divisible by 3, instead of the number you say “fizz”. If
