@@ -31,7 +31,7 @@ function fizzbuzz() {
 		//Prioritize if conditions to check for divisible by 3 AND 5
 		if ( i % 3 === 0 && i % 5 === 0) {
 			console.log("fizz buzz");
-			$('body').append('<p>fizz buzz</p>');
+			$('body').append('<p>fizzbuzz</p>');
 			
 	}
 		//Check if divisible by 3
