@@ -6,7 +6,8 @@ $(document).ready(function() {
 /* APPROACH TO SOLVE */
 /* Prioritize the if statements that the first if statement
 is the divisible by 3 AND divisible by 5. This is because 
-if I started with just divisible by 3, it'll print for that and then it'll also print AGAIN on top. For example, if my code has
+if I started with just divisible by 3, it'll print for that and
+then it'll also print AGAIN on top. For example, if my code has
 check if it is divisible by 3, then if it is divisible by 5 and
 finally divisible by both....the program when it reaches variable
 equals 15, will have printed Fizz, Buzz AND FizzBuzz. This is
