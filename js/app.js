@@ -31,25 +31,23 @@ function fizzbuzz() {
 		//Prioritize if conditions to check for divisible by 3 AND 5
 		if ( i % 3 === 0 && i % 5 === 0) {
 			console.log("fizz buzz");
+			$('body').append('<p>fizz buzz</p>');
+			
 	}
 		//Check if divisible by 3
 		else if (i % 3 === 0) {
 			console.log('fizz');	
+			$('body').append('<p>fizz</p>');
 		}
 		//Check if divisble by 5
 		else if (i % 5 === 0) {
 			console.log('buzz');
+			$('body').append('<p>buzz</p>');
 		}
 		//Finally, since the number is not div by 3 or 5, just print number
 		else {
 			console.log(i);	
+			$('body').append('<p>' + i + '</p>');
 		}
 	}
 }
-/* you count from 1 to a given number (let’s say 100). For each
-number if it’s not divisible by 3 or 5, you simply say the number.
-If it’s divisible by 3, instead of the number you say “fizz”. If
-it’s divisible by 5, you say “buzz”. And finally if it’s divisible
-by both 3 and 5, you say “fizz buzz”. So, counting from 1 to 15,
-you’d say: “1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz,
-13, 14, fizz buzz”.*/
