@@ -23,6 +23,7 @@ having been met. */
 
 function fizzbuzz() {
 	for ( var i = 1; i < 101; i++) {
+		//Prioritize if conditions to check for divisible by 3 AND 5
 		
 	}
 	
